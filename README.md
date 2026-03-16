@@ -6,7 +6,7 @@ This repository provides a streamlined workflow for fine-tuning Google's **Gemma
 
 ## 📋 Prerequisites
 
-* **Dataset:** You must have a training dataset named `dataset.jsonl` to upload to notebook.
+* **Dataset:** You must have a training dataset (recommended to make with ai **specify Gemma**)**named `dataset.jsonl`** to upload to notebook.
 * **Hugging Face Account:** Required to access the model weights.
 * **Hardware:** This notebook is optimized for a **T4 GPU** (available on the free tier of Colab).
 
