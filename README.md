@@ -39,7 +39,7 @@ This repository provides a streamlined workflow for fine-tuning Google's **Gemma
 
 ## 🚄 Training Execution
 
-1. **Set Runtime:** Click the arrow next to the **Runtime** button (top right) > **Change runtime type**. Select **v5e-1 TPU** and click Save.
+1. **Set Runtime:** Click the arrow next to the **Runtime** button (top right) > **Change runtime type**. Select **v5e-1 TPU** (as google TPUs are very good at training) and click Save.
 2. **Upload Dataset:** * Ensure your file is named `dataset.jsonl`.
    * Click the **Folder icon** on the left sidebar and upload the file.
 3. **Run All:** Click **Runtime** > **Run all** (or `Ctrl + F9`).
