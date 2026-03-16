@@ -1,21 +1,52 @@
-# gemma3 trainig code for google colab
-MAKE SURE YOU HAVE A DATESET THAT ENDS WITH .jsonl FOR GEMMA TO TRAIN ON (recommend using ai to generate)
-google colab code for training gemma 3
-1.Download the ipynb file for your specific Gemma 3 model
-2. sign up to https://www.huggingface.co
-3. go to this link to access gemma3 all models (do not mind about the model getting access to one means access to all gemma model) https://huggingface.co/google/gemma-3-4b-it
-4. click on your huggingface profile logo and scroll down to access keys
-5. click create new key
-6. name it colab_gemma
-7. copy it as you won't see it again
-8. go to http://colab.research.google.com
-9. click on file
-10. click upload notebook
-11. put the specific .ipynb file for a specific gemma model downloaded from this repo in there
-12. on the left go to secrets and add a secret and call it HF_TOKEN and paste your huggingface access key in value
-13. on the top right click the arrow next to runtime and click change runtime
-14. select T4 GPU
-15. rename your dataset for the ai to train on file to dataset.jsonl
-16. click the folder icon on the left and upload your dataset.jsonl
-17. at the top click run all
-It will save an ollama model as a .gguf at the end in your google drive
+# 🚀 Gemma 3 Training for Google Colab
+
+This repository provides a streamlined workflow for fine-tuning Google's **Gemma 3** models using Google Colab and the Unsloth library for 2x faster training.
+
+---
+
+## 📋 Prerequisites
+
+* **Dataset:** You must have a training dataset named `dataset.jsonl` in the root folder.
+* **Hugging Face Account:** Required to access the model weights.
+* **Hardware:** This notebook is optimized for a **T4 GPU** (available on the free tier of Colab).
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Access the Model
+1. Sign up or log in at [Hugging Face](https://huggingface.co).
+2. Visit the [Gemma 3 4B-it Model Page](https://huggingface.co/google/gemma-3-4b-it).
+3. Accept the license agreement. *Note: Accessing one Gemma 3 model usually grants access to the entire family.*
+
+### 2. Create a Hugging Face Token
+1. Click your profile icon (top right) and go to **Settings** > **Access Tokens**.
+2. Click **Create new token** and name it `colab_gemma`.
+3. Copy the token immediately; you will need it for the next step.
+
+### 3. Configure Google Colab
+1. Open [Google Colab](http://colab.research.google.com).
+2. Go to **File** > **Upload notebook** and select the `.ipynb` file from this repo.
+3. On the left sidebar, click the **Key icon (Secrets)**.
+4. Add a new secret:
+   * **Name:** `HF_TOKEN`
+   * **Value:** Paste your Hugging Face access token.
+   * **Permission:** Toggle "Notebook access" to **On**.
+
+---
+
+## 🚄 Training Execution
+
+1. **Set Runtime:** Click the arrow next to the **Runtime** button (top right) > **Change runtime type**. Select **T4 GPU** and click Save.
+2. **Upload Dataset:** * Ensure your file is named `dataset.jsonl`.
+   * Click the **Folder icon** on the left sidebar and upload the file.
+3. **Run All:** Click **Runtime** > **Run all** (or `Ctrl + F9`).
+4. The ollama .gguf file will be in your google drve
+
+---
+
+### 💡 Pro-Tips
+* **Dataset Format:** Ensure your `.jsonl` entries match the Gemma 3 prompt template for the best results.
+* **Saving:** Your fine-tuned model will be saved in the `/outputs` folder within the Colab file browser.
+
+---
