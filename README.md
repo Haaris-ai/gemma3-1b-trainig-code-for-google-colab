@@ -1,12 +1,12 @@
 # gemma3 1b trainig code for google colab
 google colab code for training gemma 3
-1. sign up to huggingface.co
+1. sign up to https://www.huggingface.co
 2. go to this link to access gemma3 all models (do not mind about the model getting access to one means access to all gemma model) https://huggingface.co/google/gemma-3-4b-it
 3. click on your huggingface profile logo and scroll down to access keys
 4. click create new key
 5. name it colab_gemma
 6. copy it as you won't see it again
-7. go to colab.research.google.com
+7. go to http://colab.research.google.com
 8. click on file
 9. click upload notebook
 10. put the specific .ipynb file for a specific gemma model downloaded from this repo in there
