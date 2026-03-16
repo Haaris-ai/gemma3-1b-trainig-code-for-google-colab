@@ -26,7 +26,7 @@ This repository provides a streamlined workflow for fine-tuning Google's **Gemma
 
 ### 3. Configure Google Colab
 1. Open [Google Colab](http://colab.research.google.com).
-2. Go to **File** > **Upload notebook** and select the `.ipynb` file from this repo.
+2. Go to **File** > **Upload notebook** and select the specific for your Gemma 3 model`.ipynb` file from this repo.
 3. On the left sidebar, click the **Key icon (Secrets)**.
 4. Add a new secret:
    * **Name:** `HF_TOKEN`
